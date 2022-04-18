@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一个Vue实例</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <style>
+        td{
+            width: 130px;
+            height: 50px;
+        }
+    </style>   
+</head>
+<body>
+    <div id="container">
+    <table border="1" width="800" height="680" align="center" cellspacing="0">
+		<caption><h1>个人简历</h1></caption>
+		<tr align="center">
+			<td bgcolor="#ededed">姓名</td>
+			<td>{{name}}</td>
+			<td bgcolor="#ededed">年龄</td>
+			<td>{{age}}</td>
+			<td bgcolor="#ededed">性别</td>
+			<td>{{gender}}</td>
+			<td colspan="2" rowspan="3"><img v-bind:src="image"></td>
+		</tr>
+		<tr align="center">
+			<td bgcolor="#ededed">民族</td>
+			<td>{{nation}}</td>
+			<td bgcolor="#ededed">政治面貌</td>
+			<td>{{PoliticsStatus}}</td>
+			<td bgcolor="#ededed">学号</td>
+			<td>{{StudentNumber}}</td>
+		</tr>
+		<tr align="center">
+			<td bgcolor="#ededed">毕业学校</td>
+			<td colspan="2">{{school}}</td>
+			<td bgcolor="#ededed">所学专业</td>
+			<td colspan="2">{{specialty}}</td>
+		</tr>
+		<tr align="center">
+			<td bgcolor="#ededed">专业能力</td>
+			<td colspan="7">{{ability}}</td>
+		</tr>
+		<tr align="center">
+			<td bgcolor="#ededed">求职意向</td>
+			<td colspan="7">{{profession}}</td>
+		</tr>
+		<tr align="center">
+			<td bgcolor="#ededed">获奖情况</td>
+			<td colspan="7">{{awards}}</td>
+		</tr>
+	</table>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#container',
+            data: {
+                name: '李浩然',
+                age: '20',
+                gender: '男',
+                image: 'images/c.jpg',
+                nation: '汉族',
+                PoliticsStatus:'共青团员',
+                StudentNumber:'35232001063',
+                school: '河北工业职业技术大学',
+                specialty:'大数据技术与应用',
+                ability:'Html5+Css3、JavaScript、C语言、Python语言、Java语言、PythonDjango',
+                profession: 'web前端开发、python数据可视化',
+                awards:'全国工业经济应用创新职业技能竞赛人工智能训练师赛项学生组一等奖第一名'
+            }
+        });
+    </script>
+</body>
+</html>
