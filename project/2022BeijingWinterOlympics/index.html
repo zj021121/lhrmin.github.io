@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>2020冬奥会-首页</title>
+		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/jquery-2.2.0.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
+		<script type="text/javascript" src="js/radialIndicator.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
+		<link rel="shortcut icon" href="img/projectImage/favicon.ico"/>
+		<link rel="bookmark" href="img/projectImage/favicon.ico"/>
+	</head>
+	<body>
+		<div class="header">
+			<p class="logo2"><img src="img/leftLogo.png"/></p>
+			<!-- 有些二级菜单注释了，取消注释就会显示，误改代码 -->
+			<ul>
+				<li class="active" id="mr">
+					<a href="javascript:;">
+						<span class="span1">首页</span>
+						<span class="span2">Home</span>
+						<span class="underLine"></span>
+					</a>
+				</li>
+				<li>
+					<a href="child/athletes.html" >
+						<span class="span1">运动健儿</span>
+						<span class="span2">Athletes</span>
+						<span class="underLine"></span>
+					</a>
+				</li>
+				<li>
+					<a href="child/sports.html">
+						<span class="span1">运动项目</span>
+						<span class="span2">Sprots</span>
+						<span class="underLine"></span>
+					</a>
+				</li>
+				<p class="logo"><img src="img/logo.png"/></p>
+				<li>
+					<a href="child/news.html">
+						<span class="span1">新闻中心</span>
+						<span class="span2">News</span>
+						<span class="underLine"></span>
+					</a>
+				</li>
+				<li>
+					<a href="child/about.html">
+						<span class="span1">关于冬奥</span>
+						<span class="span2">About</span>
+						<span class="underLine"></span>
+					</a>
+					<ol class="secondOl">
+						<li>
+							<a href="child/about.html#county">参赛国家</a>
+						</li>
+						<li>
+							<a href="child/mascot.html">吉祥物</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="child/contact.html">
+					
+						<span class="span1">联系我们</span>
+						<span class="span2">Contact</span>
+						<span class="underLine"></span>
+					
+					</a>
+					<!-- <ol class="secondOl">
+						<li>北京赛区</li>
+						<li>延安赛区</li>
+					</ol> -->
+				</li>
+				
+			</ul>
+			<div class="tel" style="color:#6620a0">
+				<p>倒计时</p>
+				<p id="timeEnd"></p>
+			</div>
+		</div>
+		<div class="banner" style="margin-top: 0px;">
+			<div class="swiper-container3">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background: url(img/banner.PNG)center;background-size:cover;">
+						<img src="img/banner.PNG"/>
+					</div>
+					<div class="swiper-slide" style="background: url(img/banner2.jpg)center;background-size:100% auto;">
+						<img src="img/banner2.jpg"/>
+					</div>
+					<div class="swiper-slide" style="background: url(img/banner3.png)center;background-size:100% auto;">
+						<img src="img/banner3.png"/>
+					</div>
+				</div>
+				<div class="swiper-pagination2"></div>
+			</div>
+		</div>
+			<script>
+				var swiper=new Swiper(".swiper-container3",{
+					pagination:".swiper-pagination2",
+			        slidesPerView: 1,
+			        paginationClickable: true,
+			        loop: true,
+			        autoplay:5000
+				})
+			</script>
+		<div class="cont1">
+			<div class="title">
+				<p class="p1">A</p>
+				<div class="p2">
+					<p class="pp1">关于</p>
+					<p class="pp2">BOUT OLYMPIC</p>
+				</div>
+			</div>
+			<div class="cont1_box">
+				<div class="cont1_left">
+					<p class="p1">第24届冬奥会将在中国举行!!</p>
+					<p class="p2">冬季奥林匹克运动会（Olympic Winter Games），简称为冬季奥运会、冬奥会。主要由全世界地区举行，是世界规模最大的冬季综合性运动会，每四年举办一届，1994年起与夏季奥林匹克运动会相间举行。参与国主要分布在世界各地。</p>
+    				<p class="p2">第24届冬季奥林匹克运动会于2022年02月04日至02月20日在中国北京和张家口举行。</p>
+				</div>
+				<div class="cont1_right">
+					<img src="img/cont1_pic1.png"/>
+				</div>
+			</div>
+			<p class="moreP"><a href="child/about.html">MORE</a></p>
+		</div>
+		<div class="line"></div>
+		<div class="cont2">
+			<img src="img/cont2_bg.png"/>
+			<div class="title">
+				<p class="p1">S</p>
+				<div class="p2">
+					<p class="pp1">运动项目</p>
+					<p class="pp2">PORT</p>
+				</div>
+			</div>
+			<div class="cont2_box">
+				<div class="J_Poster poster-main" data-setting='{
+					"width":1110,
+					"height":500,
+					"posterWidth":300,
+					"posterHeight":500,
+					"scale":0.85,
+					"autoPlay":true,
+					"delay":500000,
+					"speed":300
+				}'>
+					<div class="poster-btn poster-prev-btn"></div>
+					<ul class="poster-list">
+						<li class="poster-item">
+							<div class="pb_box">
+								<p class="p_img"><img src="img/cont2_pic2.png"/></p>
+								<div class="p_info">
+									<p class="p1">速度滑冰</p>
+									<p class="p2">速度滑冰是以冰刀为工具在冰上进行的一种冰上竞速运动。它是指在规定距离内以竞速为目的的滑冰比赛，简称速滑，</p>
+								</div>
+							</div>
+						</li>
+						<li class="poster-item">
+							<div class="pb_box">
+								<p class="p_img"><img src="img/cont2_pic5.png"/></p>
+								<div class="p_info">
+									<p class="p1">滑雪</p>
+									<p class="p2">越野滑雪是借助滑雪用具，运用登山、滑降、转弯、滑行等基本技术，滑行于山丘雪原的运动项目，考验着运动员的耐力与毅力。</p>
+								</div>
+							</div>
+						</li>
+						<li class="poster-item">
+							<div class="pb_box">
+								<p class="p_img"><img src="img/cont2_pic3.png"/></p>
+								<div class="p_info">
+									<p class="p1">花样滑冰</p>
+									<p class="p2">花样滑冰是冰上运动项目之一。运动员通过冰刀在冰面上划出图形，并表演跳跃、旋转等高难度动作。</p>
+								</div>
+							</div>
+						</li>
+						<li class="poster-item">
+							<div class="pb_box">
+								<p class="p_img"><img src="img/iceHockey.png"/></p>
+								<div class="p_info">
+									<p class="p1">冰球</p>
+									<p class="p2">冰球亦称"冰上曲棍球"。冰球运动是多变的滑冰技艺和敏捷娴熟的曲棍球技艺相结合，对抗性较强的集体冰上运动项目之一</p>
+								</div>
+							</div>
+						</li>
+						<li class="poster-item">
+							<div class="pb_box">
+								<p class="p_img"><img src="img/cont2_pic4.png"/></p>
+								<div class="p_info">
+									<p class="p1">单板滑雪</p>
+									<p class="p2">单板滑雪又称冬季的冲浪运动，单板滑雪选手用一个滑雪板而不是一双滑雪板，利用身体和双脚来控制方向。</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="poster-btn poster-next-btn"></div>
+				</div>
+				<script type="text/javascript">
+					$(function() {
+						Carousel.init($(".J_Poster"));
+					});
+					$(".pb_box").eq(0).addClass("index2");
+					$(".poster-prev-btn").click(function(){
+						for(var i=0;i<$(".poster-item").length;i++){
+							if($(".poster-item").eq(i).css("z-index")=="2"){
+								$(".poster-item").eq(i-1).find(".pb_box").addClass("index2");
+							}else{
+								$(".poster-item").eq(i-1).find(".pb_box").removeClass("index2");
+							}
+						}
+					});
+					$(".poster-next-btn").click(function(){
+						$(".poster-item").find(".pb_box").removeClass("index2");
+						for(var i=0;i<$(".poster-item").length;i++){
+							if($(".poster-item").eq(i).css("z-index")=="2"){
+								if(i==4){
+									$(".pb_box").eq(0).addClass("index2");
+								}else{
+									$(".poster-item").eq(i+1).find(".pb_box").addClass("index2");
+								}
+							}
+						}
+					});
+				</script>
+				
+			</div>
+			<p class="moreP"><a href="child/sports.html">MORE</a></p>
+		</div>
+		<div class="cont3">
+			<div class="title">
+				<p class="p1">N</p>
+				<div class="p2">
+					<p class="pp1">新闻</p>
+					<p class="pp2">EWS</p>
+				</div>
+			</div>
+			<div class="swiper-container1">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<div class="news_li">
+							<p class="p1">23<span>/11</span></p>
+							<p class="p2">冬奥梦交汇中国梦，这是习近平心中“大事” </p>
+							<p class="p3"><img src="img/projectImage/new1.jpg" "/></p>
+							<p class="p4">1月18日至20日，习近平总书记亲赴北京、河北，实地考察2022年冬奥会和冬残奥会的筹办工作。“办好北京冬奥会、冬残奥会是党和国家的一件大事”，总书记看望了正努力训练的运动员、教练员、赛区工作人员和建设者，并指出做好冬奥筹办工作使命光荣、意义重大。</p>
+						</div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<div class="news_li">
+							<p class="p1">10<span>/11</span></p>
+							<p class="p2">北京冬奥村，首次亮灯！ </p>
+							<p class="p3"><img src="img/new3.jpg"/></p>
+							<p class="p4">9日晚上，北京冬奥村（冬残奥村）披上“彩衣”，建筑外立面上的“冬奥村”三字首次点亮，“I♡BJ”字样也在南侧三栋楼亮相，表示北京冬奥村（冬残奥村）已经准备好了，赛时将为运动员提供温馨、暖心的服务。</p>
+						</div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<div class="news_li">
+							<p class="p1">29<span>/11</span></p>
+							<p class="p2">冰墩墩雪容融 最萌雪景迎冬奥 </p>
+							<p class="p3"><img src="img/new2.jpg"/></p>
+							<p class="p4">蒋效愚表示：“冬奥会吉祥物冰墩墩和冬残奥会的吉祥物雪容融，是一个非常完美的搭配和组合，是中国文化和奥林匹克精神又一次完美的结合，也是冬奥组委和中国人民给奥林匹克运动和世界赠送的一个珍贵的礼物，凝聚着集体智慧的结晶。”</p>
+						</div>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+			<script>        
+			  var mySwiper = new Swiper ('.swiper-container1', {
+			    direction: 'horizontal',
+			    loop: true,
+			    slidesPerView: 2,
+			    pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        spaceBetween:60
+			  })        
+			  </script>
+			<p class="moreP"><a href="child/news.html">MORE</a></p>
+		</div>
+		<div class="line"></div>
+		<div class="cont4">
+			<div class="title">
+				<p class="p1">A</p>
+				<div class="p2">
+					<p class="pp1">运动健儿</p>
+					<p class="pp2">THLETES</p>
+				</div>
+			</div>
+			<div class="cont4_box">
+				<ul class="cont4_left">
+					<li><img src="img/athlete1.png"/></li>
+					<li><img src="img/athlete2.png"/></li>
+					<li><img src="img/athlete3.png"/></li>
+					<li><img src="img/athlete9.png"/></li>
+				</ul>
+				<div class="cont4_center">
+					<p class="p1" style="color:white">逐梦北京2022年冬奥会</p>
+					<p class="p2" style="color:white">激情冰雪属于你，雪道飞驰更带劲，看体育健儿雪上英姿，瞧各国英豪潇洒瞬间。中国体育健儿在摩拳擦掌，祝福运动员冬奥会赛出佳绩捧大奖！</p>
+				</div>
+				<ul class="cont4_right">
+					<li><img src="img/athlete5.png"/></li>
+					<li><img src="img/athlete6.png"/></li>
+					<li><img src="img/athlete7.png"/></li>
+					<li><img src="img/athlete8.png"/></li>
+				</ul>
+			</div>
+			<p class="moreP"><a href="child/athletes.html">MORE</a></p>
+		</div>
+		<div class="line"></div>
+		<div class="cont5">
+			<div class="title">
+				<p class="p1">C</p>
+				<div class="p2">
+					<p class="pp1">合作企业</p>
+					<p class="pp2">OOPERATION</p>
+				</div>
+			</div>
+			<div class="cont5_box">
+				<table border="0" cellpadding="0" cellspacing="0 ">
+					<tr>
+						<td><img src="img/cont5_pic1.jpg"/></td>
+						<td><img src="img/cont5_pic2.jpg"/></td>
+						<td><img src="img/cont5_pic3.jpg"/></td>
+						<td><img src="img/cont5_pic4.jpg"/></td>
+					</tr>
+					<tr>
+						<td><img src="img/cont5_pic5.jpg"/></td>
+						<td><img src="img/cont5_pic6.jpg"/></td>
+						<td><img src="img/cont5_pic7.jpg"/></td>
+						<td><img src="img/cont5_pic8.jpg"/></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="right_box">
+			<ul>
+				<li>
+					<img class="img1" src="img/projectImage/panda.png"/>
+					<img class="img2" src="img/projectImage/panda.png"/>
+				</li>
+				<li class="er"><!--把class="active er"-->
+					<img class="img1" src="img/projectImage/ma.png"/>
+					<img class="img2" src="img/projectImage/ma.png"/>
+				</li>
+				<li class="to_top" style="height: 69px;">
+					<img class="img1" src="img/projectImage/topButton.png"/>
+					<img class="img2" src="img/projectImage/topButton.png"/>
+				</li>
+			</ul>
+			<div class="erweima">
+				<img src="img/projectImage/appDonlowd.jpg"/>
+				<p>扫码安装冬奥官方APP</p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_box">
+				<div class="footer_left">
+					<p>
+						<a href="javascript:;">关于冬奥 </a> |
+						<a href="javascript:;">赛区&文化</a> | 
+						<a href="javascript:;">冬奥百科</a>
+						<a href="javascript:;">精彩视频</a> | 
+						<a href="javascript:;">新闻速递</a> |
+					</p>
+					<p>冬奥会和冬残奥会 </p>
+					
+					<p>官方网址:https://www.beijing2022.cn/</p>
+					<p>地址：中国·北京</p>
+				</div>
+				<div class="footer_right">
+					<p style="margin-right: 30px;">
+						<img src="img/projectImage/app.jpg"/>
+						<span>Android版</span>
+					</p>
+					<p>
+						<img src="img/projectImage/ios.jpg"/>
+						<span>IOS版</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(window).resize(function () {      
+			$(".cont4_center ").css("height",$(".cont4_left").css("height"));
+		});
+		$(function(){
+			$(".cont4_center ").css("height",$(".cont4_left").css("height"));
+			$(".to_top").click(function(){
+				$('html,body').animate({scrollTop:0},500);
+			});
+			$(".right_box ul li").hover(function(){
+				$(this).addClass("active");
+			},function(){
+				$(this).removeClass("active");
+			});
+			$(".right_box ul li.er").hover(function(){
+				$(".erweima").stop().fadeIn();
+			},function(){
+				$(".erweima").stop().fadeOut();
+			});
+			$(".header ul li").find(".span2").hide();
+			$(".header ul li.active").find(".span1").hide();
+			$(".header ul li.active").find(".span2").show();
+			$(".header ul li.active").find(".underLine").css("width","100%");
+			$(".header ul li").hover(function(){
+				$(this).addClass("active");
+				$(this).find(".span1").hide();
+				$(this).find(".span2").show();
+				$(this).find(".underLine").stop().animate({width:"100%"});
+			},function(){
+				$(this).removeClass("active");
+				$(this).find(".span1").show();
+				$(this).find(".span2").hide();
+				$(this).find(".underLine").stop().animate({width:"0"});
+				$(this).find("#mr").stop().animate({width:"100%"});
+			});
+			
+		});
+	</script>
+	<script type = "text/javascript">
+				// 倒计时js
+				function countTime(){
+					//获取div元素
+					var idDiv = document.getElementById("timeEnd");
+					//获取当前时间
+					var dateData = new Date();
+					var currentDate = dateData.getTime();
+					//截止时间
+					var endTime = "2022/2/4 20:00:00";
+					var endTimeDate = new Date(endTime);
+					var endDate = endTimeDate.getTime();
+					//设置时间差
+					var leftTime = endDate - currentDate;
+					//定义时，分、秒变量
+					var day,hours,minute,secend;
+					if(leftTime >= 0){
+						day = Math.floor(leftTime/1000/60/60/24);
+						hours = Math.floor(leftTime/1000/60/60%24);
+						minute = Math.floor(leftTime/1000/60%60);
+						secend = Math.floor(leftTime/1000%60);
+					}
+					idDiv.innerHTML = day + "天 " + hours +"时" + minute +  "分" + secend +"秒";
+				}
+				setInterval(countTime,1000);
+			
+	</script>
+</html>
