@@ -1,0 +1,92 @@
+.theme-settings {
+	position: fixed;
+	left: 0;
+	top: 30%;
+	z-index: 3;
+}
+
+.settings-button {
+	background: #222;
+    color: #FFF;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-button:hover {
+	color: #FFF;
+}
+
+.demo-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.8;
+}
+
+.demo-item {
+    -moz-box-shadow: 3px 3px 5px 0px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 0px #ccc;
+  box-shadow: 3px 3px 5px 0px #ccc;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.demo-item:hover {
+    -webkit-transform: translateY(-14px);
+  -moz-transform: translateY(-14px);
+  -ms-transform: translateY(-14px);
+  transform: translateY(-14px);
+}
+
+.demo-item .overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+a.select-demo {
+    background: #FFF;
+    border: solid 2px #FFF;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+a.select-demo:hover {
+    background: transparent;
+    border: solid 2px;
+    color: #FFF;
+}
+
+.demo-features {
+    color: #FFF;
+}
+
+.demo-features .section-header {
+    border-bottom: 1px solid #222;
+}
+
+.demo-features .service-item {
+    border: solid 1px #222;
+}
