@@ -1,0 +1,55 @@
+body{
+	/* background-color: #000000; */
+}
+
+#video_text{
+	color: white;
+	width: 100%;
+	font-size:40px;
+	font-weight: bold;
+	position: absolute;
+	margin-top: 200px;
+	text-align: center;
+	top: 300px;
+}
+
+#video_text span{
+	font-size: 18px;
+}
+.jxw{
+	float: left;
+	background: url(../img/bg_pcleft.jpg),url(../img/bg_pcright.jpg);
+	background-repeat: no-repeat no-repeat;
+	background-position: left bottom, right bottom;
+	margin: auto;
+	height: 500px;
+	/* border: black solid 1px; */
+	margin-top: 50px;
+	width:100%;
+}
+.jxw .jxw_pic,.jxw_text{
+	float: left;
+}
+.jxw .jxw_pic{
+	width: 400px;
+}
+.jxw .jxw_pic img{
+	width: 400px;
+}
+.jxw_text{
+	font-weight: 300;
+	line-height: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	width:650px;
+}
+.jxw_text span{
+	font-weight: 500;
+	color: #009cff;
+}
+#xrr_text{
+	margin-left: 400px;
+}
+#bdd_pic{
+	margin-left:200px ;
+}
